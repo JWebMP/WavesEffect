@@ -1,19 +1,19 @@
 package com.jwebmp.plugins.waveseffect;
 
-import com.jwebmp.core.base.ComponentHierarchyBase;
+import static com.jwebmp.core.utilities.StaticStrings.*;
 
-public class WavesEffects
+public enum WavesEffects
 {
-	private static final WavesEffects instance = new WavesEffects();
+	Waves_Light,
+	Waves_Circle,
+	Waves_Button,
+	Waves_Float,
+	Waves_Block;
 
-	private WavesEffects()
+	@Override
+	public String toString()
 	{
-		//No config required
-	}
-
-	public static ComponentHierarchyBase applyEffect(ComponentHierarchyBase component, WavesTypes... effects)
-	{
-
-		return component;
+		return name().toLowerCase()
+		             .replace(CHAR_UNDERSCORE, CHAR_DASH);
 	}
 }

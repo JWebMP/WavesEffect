@@ -8,9 +8,9 @@ public class WavesApplyToSelectorFeature
 		extends Feature
 {
 	private String selector;
-	private Set<WavesTypes> classes;
+	private Set<WavesEffects> classes;
 
-	public WavesApplyToSelectorFeature(String selector, WavesTypes... classes)
+	public WavesApplyToSelectorFeature(String selector, WavesEffects... classes)
 	{
 		super("WavesApplyToSelectorFeature");
 		this.selector = selector;
@@ -26,7 +26,7 @@ public class WavesApplyToSelectorFeature
 		if (classes != null && !classes.isEmpty())
 		{
 			sb.append(",[");
-			for (WavesTypes aClass : classes)
+			for (WavesEffects aClass : classes)
 			{
 				sb.append(aClass.toString())
 				  .append(",");
