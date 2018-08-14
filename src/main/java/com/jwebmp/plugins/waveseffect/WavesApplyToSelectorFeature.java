@@ -2,6 +2,7 @@ package com.jwebmp.plugins.waveseffect;
 
 import com.jwebmp.core.Feature;
 
+import java.util.LinkedHashSet;
 import java.util.Set;
 
 public class WavesApplyToSelectorFeature
@@ -14,7 +15,25 @@ public class WavesApplyToSelectorFeature
 	{
 		super("WavesApplyToSelectorFeature");
 		this.selector = selector;
-		this.classes = Set.of(classes);
+		if (classes != null)
+		{
+			setClasses(new LinkedHashSet<>());
+			for (WavesEffects aClass : classes)
+			{
+				getClasses().add(aClass);
+			}
+
+		}
+	}
+
+	public Set<WavesEffects> getClasses()
+	{
+		return classes;
+	}
+
+	public void setClasses(Set<WavesEffects> classes)
+	{
+		this.classes = classes;
 	}
 
 	@Override
@@ -36,5 +55,16 @@ public class WavesApplyToSelectorFeature
 		}
 		sb.append(");");
 		addQuery(sb);
+	}
+
+	public String getSelector()
+	{
+		return selector;
+	}
+
+	public void setSelector(String selector)
+	{
+
+		this.selector = selector;
 	}
 }
