@@ -9,7 +9,7 @@ import com.jwebmp.core.services.IPageConfigurator;
 import javax.validation.constraints.NotNull;
 
 public class WavesEffectPageConfigurator
-		implements IPageConfigurator
+		implements IPageConfigurator<WavesEffectPageConfigurator>
 {
 	private static final JavascriptReference reference = new JavascriptReference("WavesEffectJSReference", 0.76, "bower_components/waves/dist/waves.min.js");
 	private static final CSSReference cssReference = new CSSReference("WavesEffectCSSSReference", 0.76, "bower_components/waves/dist/waves.min.css");
