@@ -4,6 +4,7 @@ import com.jwebmp.core.Feature;
 import com.jwebmp.core.Page;
 import com.jwebmp.core.base.references.CSSReference;
 import com.jwebmp.core.base.references.JavascriptReference;
+import com.jwebmp.core.base.servlets.enumarations.RequirementsPriority;
 import com.jwebmp.core.services.IPageConfigurator;
 
 import javax.validation.constraints.NotNull;
@@ -11,9 +12,10 @@ import javax.validation.constraints.NotNull;
 public class WavesEffectPageConfigurator
 		implements IPageConfigurator<WavesEffectPageConfigurator>
 {
-	private static final JavascriptReference reference = new JavascriptReference("WavesEffectJSReference", 0.76, "bower_components/waves/dist/waves.min.js");
-	private static final CSSReference cssReference = new CSSReference("WavesEffectCSSSReference", 0.76, "bower_components/waves/dist/waves.min.css");
-	private static final CSSReference cssOverridesReference = new CSSReference("WavesEffectCSSSOverideReference", 0.76, "waves_overrides/waves_colours.min.css");
+	private static final JavascriptReference reference = new JavascriptReference("WavesEffectJSReference", 0.76, "bower_components/waves/dist/waves.min.js")
+			.setPriority(RequirementsPriority.Fourth);
+	private static final CSSReference cssReference = new CSSReference("WavesEffectCSSSReference", 0.76, "bower_components/waves/dist/waves.min.css").setPriority(RequirementsPriority.Third);
+	private static final CSSReference cssOverridesReference = new CSSReference("WavesEffectCSSSOverideReference", 0.76, "waves_overrides/waves_colours.min.css").setPriority(RequirementsPriority.Third);
 	private static final Feature initFeature = new WavesAttachFeature(null);
 	/**
 	 * If this configurator is enabled
