@@ -7,7 +7,6 @@ module com.jwebmp.plugins.waveseffect {
 
 	provides com.jwebmp.core.services.IPageConfigurator with com.jwebmp.plugins.waveseffect.WavesEffectPageConfigurator;
 
-	provides com.guicedee.guicedinjection.interfaces.IGuiceScanJarExclusions with com.jwebmp.plugins.waveseffect.implementations.WavesEffectsExclusionsModule;
 	provides com.guicedee.guicedinjection.interfaces.IGuiceScanModuleExclusions with com.jwebmp.plugins.waveseffect.implementations.WavesEffectsExclusionsModule;
 
 	//opens com.jwebmp.plugins.waveseffect to com.fasterxml.jackson.databind, com.jwebmp.core;
