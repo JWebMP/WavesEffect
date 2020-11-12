@@ -2,7 +2,7 @@ module com.jwebmp.plugins.waveseffect {
 	exports com.jwebmp.plugins.waveseffect;
 
 	requires com.jwebmp.core;
-	requires java.validation;
+	requires jakarta.validation;
 	requires com.guicedee.guicedinjection;
 
 	provides com.jwebmp.core.services.IPageConfigurator with com.jwebmp.plugins.waveseffect.WavesEffectPageConfigurator;
