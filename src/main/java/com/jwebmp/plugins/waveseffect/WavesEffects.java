@@ -4,8 +4,10 @@ import static com.guicedee.guicedinjection.json.StaticStrings.CHAR_DASH;
 import static com.guicedee.guicedinjection.json.StaticStrings.CHAR_UNDERSCORE;
 import static com.jwebmp.core.utilities.StaticStrings.*;
 
+@SuppressWarnings("unused")
 public enum WavesEffects
 {
+	Waves_Effect,
 	Waves_Light,
 	Waves_Circle,
 	Waves_Button,
