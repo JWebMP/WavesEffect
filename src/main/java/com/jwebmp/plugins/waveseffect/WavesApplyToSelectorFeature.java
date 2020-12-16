@@ -1,12 +1,14 @@
 package com.jwebmp.plugins.waveseffect;
 
 import com.jwebmp.core.Feature;
+import com.jwebmp.core.base.html.interfaces.GlobalFeatures;
+import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
 
 public class WavesApplyToSelectorFeature
-		extends Feature
+		extends Feature<GlobalFeatures, JavaScriptPart<?>,WavesApplyToSelectorFeature>
 {
 	private String selector;
 	private Set<WavesEffects> classes;
@@ -22,7 +24,6 @@ public class WavesApplyToSelectorFeature
 			{
 				getClasses().add(aClass);
 			}
-
 		}
 	}
 
