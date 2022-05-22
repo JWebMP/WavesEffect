@@ -25,6 +25,10 @@
             <groupId>com.jwebmp.core</groupId>
             <artifactId>jwebmp-core</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.jwebmp.plugins.angular</groupId>
+            <artifactId>angularts</artifactId>
+        </dependency>
     </dependencies>
 
     <scm>
