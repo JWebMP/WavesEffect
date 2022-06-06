@@ -1,12 +1,9 @@
 package com.jwebmp.plugins.waveseffect;
 
-import com.jwebmp.core.Feature;
 import com.jwebmp.core.Page;
-import com.jwebmp.core.base.angular.services.annotations.*;
-import com.jwebmp.core.base.angular.services.annotations.angularconfig.*;
-import com.jwebmp.core.base.references.CSSReference;
-import com.jwebmp.core.base.references.JavascriptReference;
-import com.jwebmp.core.base.servlets.enumarations.RequirementsPriority;
+
+import com.jwebmp.core.base.angular.client.annotations.angularconfig.*;
+import com.jwebmp.core.base.angular.client.annotations.typescript.*;
 import com.jwebmp.core.plugins.PluginInformation;
 import com.jwebmp.core.plugins.PluginStatus;
 import com.jwebmp.core.services.IPageConfigurator;
@@ -33,7 +30,7 @@ import jakarta.validation.constraints.NotNull;
 		pluginModuleName = "com.jwebmp.plugins.waveseffect",
 		pluginStatus = PluginStatus.Released
 )
-@TsDependency(value = "node-waves",version = "*")
+@TsDependency(value = "node-waves", version = "*")
 @NgScript("node_modules/node-waves/src/js/waves.js")
 @NgStyleSheet("node_modules/node-waves/src/scss/waves.scss")
 public class WavesEffectPageConfigurator
