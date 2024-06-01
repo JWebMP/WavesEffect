@@ -5,6 +5,7 @@ module com.jwebmp.plugins.waveseffect {
 
     requires com.jwebmp.client;
     requires com.jwebmp.core;
+    
     requires transitive com.jwebmp.core.base.angular.client;
     requires com.guicedee.jsonrepresentation;
 
