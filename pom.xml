@@ -13,11 +13,11 @@
     <version>2.0.0-SNAPSHOT</version>
 
     <name>Waves Effect</name>
-    <description>The JWebMP implementation for Weather Icons</description>
+    <description>Material-design inspired click/tap ripple effect plugin for JWebMP — adds Waves.js animations to buttons and interactive elements</description>
 
     <dependencies>
         <dependency>
-            <groupId>com.jwebmp.core</groupId>
+            <groupId>com.jwebmp</groupId>
             <artifactId>jwebmp-core</artifactId>
         </dependency>
         <dependency>
@@ -26,7 +26,7 @@
         </dependency>
         <dependency>
             <groupId>com.jwebmp.core</groupId>
-            <artifactId>jwebmp-testlib</artifactId>
+            <artifactId>testlib</artifactId>
             <scope>test</scope>
         </dependency>
     </dependencies>
@@ -47,13 +47,20 @@
             </dependency>
 
             <dependency>
-                <groupId>com.jwebmp</groupId>
-                <artifactId>jwebmp-bom</artifactId>
+                <groupId>com.guicedee</groupId>
+                <artifactId>fasterxml-bom</artifactId>
                 <type>pom</type>
                 <scope>import</scope>
                 <version>${guicedee.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>com.jwebmp</groupId>
+                <artifactId>jwebmp-bom</artifactId>
+                <type>pom</type>
+                <scope>import</scope>
+                <version>${jwebmp.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -62,6 +69,10 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>flatten-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
             </plugin>
         </plugins>
     </build>

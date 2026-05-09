@@ -1,7 +1,7 @@
 package com.jwebmp.plugins.waveseffect;
 
-import static com.guicedee.services.jsonrepresentation.json.StaticStrings.CHAR_DASH;
-import static com.guicedee.services.jsonrepresentation.json.StaticStrings.CHAR_UNDERSCORE;
+import static com.guicedee.modules.services.jsonrepresentation.json.StaticStrings.CHAR_DASH;
+import static com.guicedee.modules.services.jsonrepresentation.json.StaticStrings.CHAR_UNDERSCORE;
 
 @SuppressWarnings("unused")
 public enum WavesEffects
