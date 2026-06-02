@@ -22,7 +22,7 @@ Built on [Waves 0.7.6](https://fians.github.io/Waves/) · [JWebMP Core](https://
 <dependency>
   <groupId>com.jwebmp.plugins</groupId>
   <artifactId>waveseffect</artifactId>
-  <version>2.0.0-SNAPSHOT</version>
+  <version>2.0.3-SNAPSHOT</version>
 </dependency>
 ```
 
