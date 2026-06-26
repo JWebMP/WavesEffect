@@ -14,6 +14,6 @@ module com.jwebmp.plugins.waveseffect {
     provides IPageConfigurator with WavesEffectPageConfigurator;
     provides IGuiceScanModuleInclusions with WavesEffectsInclusionModule;
 
-    opens com.jwebmp.plugins.waveseffect to com.google.guice, com.jwebmp.core.angular, com.fasterxml.jackson.databind;
+    opens com.jwebmp.plugins.waveseffect to com.google.guice, com.jwebmp.core.angular, tools.jackson.databind;
     opens com.jwebmp.plugins.waveseffect.implementations to com.google.guice;
 }
